@@ -24,7 +24,6 @@
             <config-file target="*-Info.plist" parent="NSMicrophoneUsageDescription">
                 <string>$MICROPHONE_USAGE_DESCRIPTION</string>
             </config-file>
-        </preference>
          <podspec>
             <pods use-frameworks="true">
                 <pod name="IDnowSDK" spec="~> 5.0.11" />
