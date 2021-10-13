@@ -1,0 +1,58 @@
+{
+  "_from": "git+https://github.com/santhoshreddy-soultutive/cordova-plugin-idnow.git",
+  "_id": "idnowplugin@0.0.9",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/idnowplugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/santhoshreddy-soultutive/cordova-plugin-idnow.git",
+    "rawSpec": "https://github.com/santhoshreddy-soultutive/cordova-plugin-idnow.git",
+    "saveSpec": "git+https://github.com/santhoshreddy-soultutive/cordova-plugin-idnow.git",
+    "fetchSpec": "https://github.com/santhoshreddy-soultutive/cordova-plugin-idnow.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/santhoshreddy-soultutive/cordova-plugin-idnow.git#a7b19761ef1bcc0aba6d59d8b317fd3b359f4bc1",
+  "_spec": "https://github.com/santhoshreddy-soultutive/cordova-plugin-idnow.git",
+  "_where": "/Users/sreeprasantharammulpuri/ex/SberApp/SberApp",
+  "author": {
+    "name": "Vinothkumar Arputharaj"
+  },
+  "bugs": {
+    "url": "https://github.com/vino4all/cordova-plugin-idnow/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": "Santhosh Reddy Pailla",
+  "cordova": {
+    "id": "cordova-plugin-idnow",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "cordova_name": "IDnowPlugin",
+  "deprecated": false,
+  "description": "IDnow cordova plugin",
+  "homepage": "https://github.com/vino4all/cordova-plugin-idnow#readme",
+  "keywords": [
+    "IDnow ID Verification",
+    "IDnow plugin",
+    "cordova-plugin-idnow"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/brentertz/scapegoat/blob/master/LICENSE-MIT"
+    }
+  ],
+  "name": "idnowplugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santhoshreddy-soultutive/cordova-plugin-idnow.git"
+  },
+  "version": "1.0.01"
+}
