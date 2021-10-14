@@ -82,8 +82,18 @@ __weak CDVInvokedUrlCommand* globalCommand;
               {
                   if ( success )
                   {
+                      if(canceledByUser){
+                          CDVPluginResult* pluginResult = nil;
+                          pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Identification Canceled By User"];
+                          [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+                      }else{
+                          CDVPluginResult* pluginResult = nil;
+                          pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"Identification Finished"];
+                          [self.commandDelegate sendPluginResult:pluginResult callbackId:globalCommand.callbackId];
+                      }
                       // If showErrorSuccessScreen (Settings) is disabled
                       // you can show for example an alert to your users.
+                     
                   }
                   else
                   {
@@ -92,7 +102,7 @@ __weak CDVInvokedUrlCommand* globalCommand;
     
                       CDVPluginResult* pluginResult = nil;
                       pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Video Identification Aborted"];
-                      [self.commandDelegate sendPluginResult:pluginResult callbackId:globalCommand.callbackId];
+                      [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
                   }
               }];
          }
