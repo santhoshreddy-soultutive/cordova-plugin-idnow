@@ -25,6 +25,8 @@
                 <string>$MICROPHONE_USAGE_DESCRIPTION</string>
             </config-file>
          <podspec>
+              <config>
+      </config>
             <pods use-frameworks="true">
                 <pod name="IDnowSDK" spec="~> 5.0.11" />
             </pods>
