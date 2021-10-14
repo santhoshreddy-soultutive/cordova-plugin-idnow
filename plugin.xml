@@ -30,5 +30,6 @@
             </pods>
          </podspec>
         <source-file src="src/ios/IDnowPlugin.m" />
+        <source-file src="src/ios/IDnowDummy.swift" />
     </platform>
 </plugin>
