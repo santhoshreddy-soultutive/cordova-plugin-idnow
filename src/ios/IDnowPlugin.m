@@ -112,13 +112,19 @@ __weak CDVInvokedUrlCommand* globalCommand;
              UIAlertController *alertController = [UIAlertController alertControllerWithTitle: @"Error" message: error.localizedDescription preferredStyle: UIAlertControllerStyleAlert];
              UIAlertAction *action = [UIAlertAction actionWithTitle: @"Ok" style: UIAlertActionStyleCancel handler: nil];
              [alertController addAction: action];
-             [self.viewController presentViewController: alertController animated: true completion: nil];
+             [self.viewController presentViewController: alertController animated: true completion: ^{[self errorDisplayCompleted];}];
          }
      }];
     
 }
 
+-(void)errorDisplayCompleted{
 
+   // Whatever you want to do after finish animation
+
+    NSLog(@"Animation Completed")
+
+}
 - (void)startPhotoIdent:(CDVInvokedUrlCommand*)command {
     
     globalCommand = command;
@@ -158,7 +164,7 @@ __weak CDVInvokedUrlCommand* globalCommand;
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle: @"Error" message: error.localizedDescription preferredStyle: UIAlertControllerStyleAlert];
     UIAlertAction	  *action		   = [UIAlertAction actionWithTitle: @"Ok" style: UIAlertActionStyleCancel handler: nil];
     [alertController addAction: action];
-    [self.viewController presentViewController: alertController animated: true completion: nil];
+    [self.viewController presentViewController: alertController animated: true completion: ^{[self errorDisplayCompleted];}];
 }
 
 
