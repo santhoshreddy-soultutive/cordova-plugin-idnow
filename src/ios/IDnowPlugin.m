@@ -121,10 +121,11 @@ __weak CDVInvokedUrlCommand* globalCommand;
 -(void)errorDisplayCompleted{
 
    // Whatever you want to do after finish animation
-
-    NSLog(@"Animation Completed")
-
+    CDVPluginResult* pluginResult = nil;
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Unexpected Error. Please Retry"];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:globalCommand.callbackId];
 }
+
 - (void)startPhotoIdent:(CDVInvokedUrlCommand*)command {
     
     globalCommand = command;
